@@ -24,10 +24,9 @@ plugins:
 # Site Author
 author:
   name             : "zoomiti"
-  avatar           : "/assets/images/zoomiti_logo.png"
+  avatar           : "assets/images/zoomiti_logo.png"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
-  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
