@@ -1,3 +1,0 @@
-# zoomiti.net
-
-Hello Word
