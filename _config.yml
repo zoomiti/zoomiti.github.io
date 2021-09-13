@@ -1,9 +1,16 @@
 remote_theme: mmistakes/minimal-mistakes
-name: zoomiti.net
-title: zoomiti
+
+minimal_mistakes_skin: dark
+
+locale: en-US
+name: zoomiti
+title: zoomiti.net
 description: yet another programmer page
-github:
-  is_project_page: false
+twitter_username: zoomiti
+github_username: zoomiti
+
+include:
+  - _pages
 
 # Plugins (previously gems:)
 plugins:
@@ -13,3 +20,57 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+# Site Author
+author:
+  name             : "zoomiti"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an **amazing** person."
+  location         : "Somewhere"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:your.name@email.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://zoomiti.net"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/zoomiti"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/zoomiti"
+#    - label: "Instagram"
+      #icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/zoomiti"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zoomiti"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
