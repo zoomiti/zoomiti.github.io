@@ -24,7 +24,7 @@ plugins:
 # Site Author
 author:
   name             : "zoomiti"
-  avatar           : "/assets/images/zoomiti_logo.jpg"
+  avatar           : "/assets/images/zoomiti_logo.png"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
