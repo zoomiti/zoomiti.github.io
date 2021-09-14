@@ -15,13 +15,13 @@ For those following along at home all you are going to need is to make sure to h
 
 Once you have st installed you also need to make sure to install Font Awesome. On my arch system this looks like:
 ```bash
-$ sudo pacman -S ttf-font-awesome
+sudo pacman -S ttf-font-awesome
 ```
 
 # Optional Font Config
 I highly recommend this part as it makes the rest of the steps easier.
 
-When linux needs a font it tries to match a string to a font name using the utility `fc-match`. You can try running it alone to see what yyour systems default font is. What we want is for `fc-match` to match to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` so that we don't have to type the full name. To do this we will have to edit your system's font config which lives in `/etc/fonts/font.conf` or your user font config which lives in `~/.config/fonts/font.conf` (recommended) and add the following config lines.
+When Linux needs a font it tries to match a string to a font name using the utility `fc-match`. You can try running it alone to see what your systems default font is. What we want is for `fc-match fontawesome` to match to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` so that we don't have to type the full name. To do this we will have to edit your system's font config which lives in `/etc/fonts/font.conf` or your user font config which lives in `~/.config/fonts/font.conf` (recommended) and add the following config lines.
 
 Add for fontawesome abbreviation
 ```xml
@@ -58,18 +58,18 @@ Add for fontawesomebrands abbreviation
 Once you make sure you have st and Font Awesome 5 installed head to the `config.h` file in your st's directory.
 
 If there isn't a line that looks like:
-```C
+```c
 static char *font2 = "{font name here}:pixelsize=12:antialias=true:autohint=true";
 ```
 Make sure to add one after 
-```C
+```c
 static char *font = "{default font name here}:pixelsize=12:antialias=true:autohint=true";
 ```
 
-In this field you are going to want to add the font awesome fonts with a string that `fc-match` will resolve to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` and `fa-brands-400.ttf: "Font Awesome 5 Brands" "Regular"`. For those who did the optional configuration these should be `fontawesome` and `fontawesomebrands` respectively.
+In this field you are going to want to add the Font Awesome 5 fonts with a string that `fc-match` will resolve to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` and `fa-brands-400.ttf: "Font Awesome 5 Brands" "Regular"`. For those who did the optional configuration these should be `fontawesome` and `fontawesomebrands` respectively.
 
 The field will look something like this.
-```C
+```c
 static char *font2[] = { "fontawesome:style=Solid:pixelsize=14:antialias=true:autohint=true",
                          "fontawesomebrands:style=Solid:pixelsize=14:antialias=true:autohint=true",
                          "emoji:style=Solid:pixelsize=14:antialias=true:autohint=true" };
@@ -85,7 +85,7 @@ To solidify your config don't forget to rebuild st with the command
 sudo make clean install
 ```
 
-and all the new instances of st that you spawn should have font awesome glyph support!
+and all the new instances of st that you spawn should have Font Awesome 5 glyph support!
 
 
 # Alternatives
