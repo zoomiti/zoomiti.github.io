@@ -1,6 +1,7 @@
 ---
 title: "How to install fontawesome glyphs in st terminal emulator"
-
+header:
+  image: /assets/images/2021-09-13-fontawesome-banner.png
 tags:
   - linux
   - fonts
