@@ -15,8 +15,8 @@ If you're like me and new to the linux scene you may be wondering how all the l3
 For those following along at home all you are going to need is to make sure to have st with the [font2](https://st.suckless.org/patches/font2/) patch installed. If you don't know what that means you can follow my guide on patching suckless software which will be made in the future, in the meantime you can use an already patched version of st such as [Luke Smith's fork of st](https://st.suckless.org/patches/font2/). Luke's fork has great instructions on how to install it.
 
 Once you have st installed you also need to make sure to install Font Awesome. On my arch system this looks like:
-```bash
-sudo pacman -S ttf-font-awesome
+```console
+$ sudo pacman -S ttf-font-awesome
 ```
 
 # Optional Font Config
@@ -82,11 +82,11 @@ I have a line for an emoji font because without it, inputting some emojis into s
 ## Finishing installation
 To solidify your config don't forget to rebuild st with the command
 
-```bash
-sudo make clean install
+```console
+$ sudo make clean install
 ```
 
-and all the new instances of st that you spawn should have Font Awesome 5 glyph support!
+and all the new instances of st that you spawn should have Font Awesome 4 glyph support!
 
 
 # Alternatives
