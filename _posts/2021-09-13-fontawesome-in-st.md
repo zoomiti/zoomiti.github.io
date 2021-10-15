@@ -9,7 +9,7 @@ tags:
   - st
 ---
 
-If you're like me and new to the linux scene you may be wondering how all the l33t users manage to have their nice glyphs in their terminal editors. I am particular to [suckless software](https://suckless.org/) so I needed these glyphs to work in [st](https://st.suckless.org/). This turned out to be a headache so here I am documenting the process.
+If you're like me and new to the Linux scene you may be wondering how all the l33t users manage to have their nice glyphs in their terminal editors. I am particular to [suckless software](https://suckless.org/) so I needed these glyphs to work in [st](https://st.suckless.org/). This turned out to be a headache so here I am documenting the process.
 
 # Requirements
 For those following along at home all you are going to need is to make sure to have st with the [font2](https://st.suckless.org/patches/font2/) patch installed. If you don't know what that means you can follow my guide on patching suckless software which will be made in the future, in the meantime you can use an already patched version of st such as [Luke Smith's fork of st](https://st.suckless.org/patches/font2/). Luke's fork has great instructions on how to install it.
@@ -22,7 +22,7 @@ $ sudo pacman -S ttf-font-awesome
 # Optional Font Config
 I highly recommend this part as it makes the rest of the steps easier.
 
-When Linux needs a font it tries to match a string to a font name using the utility `fc-match`. You can try running it alone to see what your systems default font is. What we want is for `fc-match fontawesome` to match to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` so that we don't have to type the full name. To do this we will have to edit your system's font config which lives in `/etc/fonts/font.conf` or your user font config which lives in `~/.config/fonts/font.conf` (recommended) and add the following config lines.
+When Linux needs a font it tries to match a string to a font name using the utility `fc-match`. You can try running it alone to see what your systems default font is. What we want is for `fc-match fontawesome` to match to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` so that we don't have to type the full name. To do this we will have to edit your system's font config which lives in `/etc/fonts/font.conf` or your user font config which lives in `~/.config/fontconfig/fonts.conf` (recommended) and add the following config lines.
 
 Add for fontawesome abbreviation
 ```xml
@@ -52,7 +52,6 @@ Add for fontawesomebrands abbreviation
             <string>Font Awesome 5 Brands</string>
         </edit>
     </match>
-<!--
 ```
 
 # ST Font Awesome config
