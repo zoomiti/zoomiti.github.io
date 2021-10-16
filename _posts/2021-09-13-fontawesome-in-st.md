@@ -15,6 +15,7 @@ If you're like me and new to the Linux scene you may be wondering how all the l3
 For those following along at home all you are going to need is to make sure to have st with the [font2](https://st.suckless.org/patches/font2/) patch installed. If you don't know what that means you can follow my guide on patching suckless software which will be made in the future, in the meantime you can use an already patched version of st such as [Luke Smith's fork of st](https://st.suckless.org/patches/font2/). Luke's fork has great instructions on how to install it.
 
 Once you have st installed you also need to make sure to install Font Awesome. On my arch system this looks like:
+
 ```console
 $ sudo pacman -S ttf-font-awesome
 ```
@@ -25,6 +26,7 @@ I highly recommend this part as it makes the rest of the steps easier.
 When Linux needs a font it tries to match a string to a font name using the utility `fc-match`. You can try running it alone to see what your systems default font is. What we want is for `fc-match fontawesome` to match to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` so that we don't have to type the full name. To do this we will have to edit your system's font config which lives in `/etc/fonts/font.conf` or your user font config which lives in `~/.config/fontconfig/fonts.conf` (recommended) and add the following config lines.
 
 Add for fontawesome abbreviation
+
 ```xml
 <!--
   Accept alternate 'fontawesome' spelling
@@ -40,6 +42,7 @@ Add for fontawesome abbreviation
 ```
 
 Add for fontawesomebrands abbreviation
+
 ```xml
 <!--
   Accept alternate 'fontawesomebrands' spelling
@@ -58,10 +61,12 @@ Add for fontawesomebrands abbreviation
 Once you make sure you have st and Font Awesome 5 installed head to the `config.h` file in your st's directory.
 
 If there isn't a line that looks like:
+
 ```c
 static char *font2 = "{font name here}:pixelsize=12:antialias=true:autohint=true";
 ```
 Make sure to add one after 
+
 ```c
 static char *font = "{default font name here}:pixelsize=12:antialias=true:autohint=true";
 ```
@@ -69,6 +74,7 @@ static char *font = "{default font name here}:pixelsize=12:antialias=true:autohi
 In this field you are going to want to add the Font Awesome 5 fonts with a string that `fc-match` will resolve to `fa-solid-900.ttf: "Font Awesome 5 Free" "Solid"` and `fa-brands-400.ttf: "Font Awesome 5 Brands" "Regular"`. For those who did the optional configuration these should be `fontawesome` and `fontawesomebrands` respectively.
 
 The field will look something like this.
+
 ```c
 static char *font2[] = { "fontawesome:style=Solid:pixelsize=14:antialias=true:autohint=true",
                          "fontawesomebrands:style=Solid:pixelsize=14:antialias=true:autohint=true",
