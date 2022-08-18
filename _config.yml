@@ -26,18 +26,24 @@ plugins:
 author:
   name             : "zoomiti"
   avatar           : "assets/images/zoomiti_logo.png"
-  bio              : "I am an **amazing** person."
+  bio              : "I am an **amazing** Embedded Firmware Engineer. *Occasionally* dabble in pretty much everything else."
   location         : "Somewhere"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://zoomiti.net"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/zoomiti"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://zoomiti.net"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zoomiti"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/zoomiti"
+    - label: "Twitch"
+      icon: "fab fa-fw fa-twitch"
+      url: "https://www.twitch.tv/zoomiti"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/user/zoomiti"
 #    - label: "Instagram"
 #      icon: "fab fa-fw fa-instagram"
 #      url: "https://instagram.com/"
@@ -47,13 +53,18 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/zoomiti"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zoomiti"
-
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/zoomiti"
+    - label: "Twitch"
+      icon: "fab fa-fw fa-twitch"
+      url: "https://www.twitch.tv/zoomiti"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/user/zoomiti"
 defaults:
   # _posts
   - scope:
