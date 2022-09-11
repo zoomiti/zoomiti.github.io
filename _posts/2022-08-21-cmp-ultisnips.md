@@ -4,8 +4,6 @@ header:
 #  image: /assets/images/2022-08-09-colorscheme.png
 tags:
   - Linux
-  - color
-  - vim
   - neovim
 ---
 
