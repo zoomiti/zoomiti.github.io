@@ -17,7 +17,7 @@ expect to be able to use the completion window.
 How do we get around this? In essence by going around cmp-nvim-ultisnips auto
 checking and checking manually.
 
-# My cmp Configuration
+## My cmp Configuration
 
 ```lua
 local cmp = require'cmp'

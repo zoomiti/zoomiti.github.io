@@ -9,7 +9,7 @@ tags:
   - neovim
 ---
 
-# Motivation
+## Motivation
 Why make a color scheme when plenty of good ones already exist? Also doesn't
 neovim and vim use your terminal colors normally? Well normally it does, but I
 decided I wanted to use the `termguicolors` setting which does not respect your
@@ -17,19 +17,19 @@ terminal colors. This should've prompted me to use an already prominent color
 scheme but in all my searching I did not find one that matched well with my
 Orange/Firewatch inspired DWM setup.
 
-# TLDR:
+## TLDR:
 Take a look at my colorscheme [here](https://github.com/zoomiti/firewatch). It
 was built using the [vim-colortemplate](#vim-colortemplate) vim plugin.
 
-# [Vim-Colortemplate](https://github.com/lifepillar/vim-colortemplate)
+## [Vim-Colortemplate](https://github.com/lifepillar/vim-colortemplate)
 
 This tool made the creation of my color scheme ridiculously simple... once I figured it out.
 
-## Initial Hurdles
+### Initial Hurdles
 Although any color schemes created with this tool is compatible with vim and
 neovim the plugin only works in vim 8.0 or above.
 
-## Usage
+### Usage
 This plugin adds a new file type known as `colortemplate` with, funnily enough,
 its own syntax highlighting built in. It supports creating a palette to reuse
 colors in every highlight statement converting
@@ -80,7 +80,7 @@ Term colors: myblack myblack myblack myblack myblack myblack myblack myblack
 
 ```
 
-## Plugin Support
+### Plugin Support
 Plugin support varies from trivial to slightly involved. For example supporting
 [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) was as easy as adding these
 lines to the colortemplate.
@@ -108,5 +108,5 @@ auxfile autoload/lightline/colorscheme/@shortname.vim
 endauxfile
 ```
 
-For some examples of this you can look at [my colorscheme](https://github.com/zoomiti/firewatch/blob/main/templates/_lightline)
+For some examples of this you can look at [my colorscheme](https://github.com/zoomiti/firewatch/blob/main/templates/_lightline).
 
