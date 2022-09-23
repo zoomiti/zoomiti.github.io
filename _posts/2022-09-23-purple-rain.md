@@ -1,9 +1,9 @@
 ---
 title: Embedding Rust WASM in Jekyll Posts
 tags:
-  - Linux
   - Rust
   - WASM
+  - graphics
 toc: true
 toc_sticky: true
 custom_wasm:
@@ -93,7 +93,7 @@ fn foo() {
 ```
 
 This can get incredibly tedious to write for every function but luckily
-you can put all the functions in a `mod WASM` like this:
+you can put all the functions in a `mod wasm` like this:
 ```rust
 #[cfg(target_arch)]
 mod wasm {
