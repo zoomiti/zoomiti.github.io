@@ -27,6 +27,7 @@ plugins:
 author:
   name             : "zoomiti"
   avatar           : "assets/images/zoomiti_logo.png"
+  home             : "about"
   bio              : "I am an **amazing** Embedded Firmware Engineer. *Occasionally* dabble in pretty much everything else."
   location         : "Somewhere"
   links:
