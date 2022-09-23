@@ -1,4 +1,19 @@
 <!-- start custom head snippets -->
+{% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+    {% endfor %}
+{% endif %}
+{% if page.custom_wasm %}
+    {% for file in page.custom_wasm %}
+      <link rel='preload' src="{{ site.baseurl }}/assets/wasm/{{ file }}" as="fetch" type="application/wasm" crossorigin="" >
+    {% endfor %}
+{% endif %}
+{% if page.custom_preload_module %}
+    {% for file in page.custom_preload_module %}
+      <link rel="modulepreload" src="{{ site.baseurl }}/assets/js/{{ file }}">
+    {% endfor %}
+{% endif %}
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 
