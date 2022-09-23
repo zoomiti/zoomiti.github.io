@@ -10,6 +10,8 @@ url: https://www.zoomiti.net
 twitter_username: zoomiti
 github_username: zoomiti
 
+teaser: assets/images/default-teaser.png
+
 include:
   - _pages
 

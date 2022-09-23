@@ -1,7 +1,8 @@
 ---
 title: "How I created my own vim color scheme"
 header:
-  image: /assets/images/2022-08-09-colorscheme.png
+  image: /assets/images/2022-08-09-colorscheme-banner.png
+  teaser: /assets/images/2022-08-09-colorscheme-teaser.png
 tags:
   - Linux
   - color

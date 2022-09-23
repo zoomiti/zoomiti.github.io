@@ -4,6 +4,8 @@ tags:
   - Rust
   - WASM
   - graphics
+header:
+  teaser: /assets/images/2022-09-23-purple-rain-teaser.png
 toc: true
 toc_sticky: true
 custom_wasm:
