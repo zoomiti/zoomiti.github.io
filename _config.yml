@@ -6,7 +6,7 @@ locale: en-US
 name: zoomiti
 title: zoomiti.net
 description: yet another programmer page
-url: https:/www.zoomiti.net
+url: https://www.zoomiti.net
 twitter_username: zoomiti
 github_username: zoomiti
 
@@ -26,7 +26,6 @@ plugins:
 # Site Author
 author:
   name             : "zoomiti"
-  home             : "about"
   avatar           : "assets/images/zoomiti_logo.png"
   bio              : "I am an **amazing** Embedded Firmware Engineer. *Occasionally* dabble in pretty much everything else."
   location         : "Somewhere"
