@@ -24,7 +24,7 @@ Source software so you can find most of these projects in my
 
 ### EvolvingBehavior
 The project I am most proud of is a research project I contributed to known as
-[EvolvingBehavior](https://gitlab.com/NPC-Dev/evolvingbehavior). It is an
+[EvolvingBehavior](https://evolvingbehavior.npc.codes/). It is an
 Unreal Engine Plugin that allows developers to use evolutionary genetic algorithms
 to produce behavior trees for NPC artificial intelligence.
 
