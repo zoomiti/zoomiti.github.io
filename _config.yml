@@ -5,6 +5,7 @@ minimal_mistakes_skin: dark
 locale: en-US
 name: zoomiti
 title: zoomiti.net
+logo: /assets/images/zoomiti_logo.png
 description: yet another programmer page
 url: https://www.zoomiti.net
 twitter_username: zoomiti
