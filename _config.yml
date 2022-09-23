@@ -56,6 +56,20 @@ author:
 #      icon: "fas fa-fw fa-envelope-square"
 #      url: "mailto:your.name@email.com"
 
+# Social Sharing
+twitter:
+  username: "zoomiti"
+og_image: /assets/images/zoomiti_logo.png
+social:
+  type: Person
+  name: Zoomiti
+  links:
+    - "https://github.com/zoomiti"
+    - "https://twitter.zom/zoomiti"
+    - "https://www.youtube.com/user/zoomiti"
+    - "https://www.twitch.tv/zoomiti"
+
+
 footer:
   links:
     - label: "GitHub"
